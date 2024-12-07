@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:wght@100;200;300&display=swap');
+
+:root {
+    --cor-fundo: black;
+    --cor-letras: #f1f1f1;
+    --cor-vermelho-sangue: #A52A2A; /* Vermelho escuro (cor de sangue) */
+    --cor-temporizador: white;
+    --fonte-titulos: 'EB Garamond', serif;
+    --fonte-texto: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte-texto);
+    background-color: var(--cor-fundo);
+    background-image: url('../imagens/fundos/2.png');
+    background-size: cover;
+    background-position: center;
+    color: var(--cor-letras);
+}
+
+.countdown-container {
+    text-align: center;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
+    );
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.countdown-title {
+    font-size: 2.5rem;
+    font-family: var(--fonte-titulos);
+    color: var(--cor-vermelho-sangue);
+    margin-bottom: 20px;
+}
+
+.countdown-timer {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: var(--fonte-titulos);
+    color: var(--cor-temporizador); /* Temporizador em branco */
+}
